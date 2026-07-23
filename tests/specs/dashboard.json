@@ -1,19 +1,17 @@
 [
   {
-    "name": "/dashboard",
+    "name": "/dashboard shows owner metrics",
     "steps": [
       {
+        "send": { "text": "/dashboard" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Show aggregated usage metrics to owner"
+              "text": "📊 Owner Dashboard\n\nTotal users: 0\nTotal alerts fired: 0\n\nNo alerts fired yet."
             }
           }
-        ],
-        "send": {
-          "text": "/dashboard"
-        }
+        ]
       }
     ]
   }

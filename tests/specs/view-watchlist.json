@@ -1,19 +1,17 @@
 [
   {
-    "name": "View List",
+    "name": "View List shows empty watchlist",
     "steps": [
       {
+        "send": { "callback": "view_watchlist" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Show current watchlist with alert settings"
+              "text": "Your watchlist is empty — tap ➕ Add Coin to start tracking."
             }
           }
-        ],
-        "send": {
-          "callback": "view_watchlist"
-        }
+        ]
       }
     ]
   }

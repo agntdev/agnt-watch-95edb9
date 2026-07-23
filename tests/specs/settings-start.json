@@ -1,19 +1,17 @@
 [
   {
-    "name": "Settings",
+    "name": "Settings shows current configuration",
     "steps": [
       {
+        "send": { "callback": "settings:start" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Configure quiet hours, cooldowns, and summary preferences"
+              "text": "⚙️ Settings\n\nQuiet hours: Not set\nCooldown: 60 min"
             }
           }
-        ],
-        "send": {
-          "callback": "settings:start"
-        }
+        ]
       }
     ]
   }
