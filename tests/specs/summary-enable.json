@@ -1,19 +1,17 @@
 [
   {
-    "name": "Enable Morning Summary",
+    "name": "Enable Morning Summary shows time prompt",
     "steps": [
       {
+        "send": { "callback": "summary:enable" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Configure daily price summary delivery time"
+              "text": "🌅 Morning summary\n\nCurrent time: Not set\n\nSend a time in HH:MM format (e.g. 08:00)."
             }
           }
-        ],
-        "send": {
-          "callback": "summary:enable"
-        }
+        ]
       }
     ]
   }

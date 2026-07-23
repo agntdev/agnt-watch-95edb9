@@ -1,19 +1,17 @@
 [
   {
-    "name": "Add Coin",
+    "name": "Add Coin shows common coin buttons",
     "steps": [
       {
+        "send": { "callback": "add_coin:start" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Display common coin buttons and free-text entry field"
+              "text": "Pick a coin below or type a ticker symbol:"
             }
           }
-        ],
-        "send": {
-          "callback": "add_coin:start"
-        }
+        ]
       }
     ]
   }

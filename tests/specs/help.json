@@ -8,7 +8,7 @@
           {
             "method": "sendMessage",
             "payload": {
-              "text": "ℹ️ Tap /start to open the menu, then pick what you want from the buttons.\n\nEverything in this bot is reachable by tapping — you don't need to remember any commands."
+              "text": "ℹ️ Crypto Watchlist Alerts\n\nTrack crypto prices and get alerts when thresholds are hit.\n\n• Add coins to your watchlist\n• Set price or % change alerts\n• Check prices anytime\n• Configure quiet hours & cooldowns\n\nTap /start to open the menu."
             }
           }
         ]
